@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sai Sankhe">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Sai Sankhe's professional website">
+    <title>Sai Sankhe's Professional Website</title>
+    
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="../static/script.js"></script>
+
+</head>
+
+<body onload = "addYear()">
+    <header>
+        <h1 id="webname">Sai Sankhe</h1>
+        <nav>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars" onclick="activeNav()"></i>
+            </a>
+            <a href="index.html">Home</a><br>
+            <a href="cv.html">About me</a><br>
+            <a href="contact.html" class="active">Contact me</a><br>
+            <a href="fun.html">Fun facts</a><br>
+        </nav>
+
+    </header>
+    <div class="main">
+        <h2> Contact me</h2>
+        <form action="">
+            <label for="name">Your Name (required):</label>
+            <input type="text" id="UserName" required/>
+            
+            <label for="email">Your Email ID (required):</label>
+            <input type="email" id="UserEmail" required>
+            
+            <label for="comment">Any comments or questions:</label>
+            <textarea id="Usertext" cols="30" rows="10" required></textarea>
+            <input type="submit" value="Send" onclick="validate()">
+        </form>
+        <p id="ValidateMsg"></p>
+
+        <p>My information</p>
+        <table>
+            <tr><th>Contact Method</th><th>Description</th></tr>
+            <tr><td>Email</td><td>ssankhe@andrew.cmu.edu</td></tr>
+            <tr><td>Phone</td><td>+1(617)(834-3568)</td></tr>
+            <tr><td>LinkedIn</td><td>https://www.linkedin.com/in/sai-sankhe-73952a287/</td></tr>
+        </table>
+
+    </div>
+    <footer>
+        <p id="copyYear">Sai Sankhe &copy;</p>
+    </footer>
+    
+</body>
+</html>
